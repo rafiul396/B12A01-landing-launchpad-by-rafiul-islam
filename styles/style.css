@@ -8,8 +8,13 @@ html {
     font-size: 62.5%;
 }
 
+body {
+  background-color: var(--body-c);
+}
+
 /* theme color */
 :root {
+    --body-c: #F5F8FF;
     --primary-c: #4E47FF;
     --secondary-c: #4E47FF10;
     --dark-1: #252432;
@@ -17,6 +22,7 @@ html {
     --dark-3: #1E1E1E;
     --dark-4: #757575;
     --dark-5: #B3B3B3;
+    --dark-6: #00000050;
     --strock-c: #F2EDED;
     --placeholder-text-c: #00000050;
     --footer-text-c: #8987A1;
@@ -57,6 +63,7 @@ html {
   color: white;
   border: none;
   cursor: pointer;
+  display: inline-block;
 }
 
 /* styling code for nav section */
@@ -207,6 +214,7 @@ html {
   -ms-border-radius: 1.4rem;
   -o-border-radius: 1.4rem;
   padding: 2.4rem;
+  background-color: #ffffff50;
 }
 
 .feedback-div h4 {
@@ -243,4 +251,40 @@ html {
 .user-name p {
   font-size: 1.6rem;
   color: var(--dark-5);
+}
+
+/* styling code for trial section */
+.trial-section {
+  text-align: center;
+  padding: 7rem;
+  background-color: white;
+  border-radius: 1.4rem;
+  -webkit-border-radius: 1.4rem;
+  -moz-border-radius: 1.4rem;
+  -ms-border-radius: 1.4rem;
+  -o-border-radius: 1.4rem;
+}
+
+.trial-section h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.trial-section p {
+  font-size: 1.6rem;
+  color: var(--dark-6);
+  margin-bottom: 2rem;
+}
+
+.trial-btn {
+  margin-bottom: 2rem;
+}
+
+.trial-section img {
+  border-radius: 1.4rem;
+  -webkit-border-radius: 1.4rem;
+  -moz-border-radius: 1.4rem;
+  -ms-border-radius: 1.4rem;
+  -o-border-radius: 1.4rem;
 }
