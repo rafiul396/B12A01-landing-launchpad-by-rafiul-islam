@@ -13,6 +13,10 @@ html {
     --primary-c: #4E47FF;
     --dark-1: #252432;
     --dark-2: #25243250;
+    --dark-3: #1E1E1E;
+    --dark-4: #757575;
+    --dark-5: #B3B3B3;
+    --strock-c: #F2EDED;
     --placeholder-text-c: #00000050;
     --footer-text-c: #8987A1;
 }
@@ -159,4 +163,75 @@ html {
 
 .overview-div p {
   color: var(--dark-2);
+}
+
+/* styling code for user's feedback section */
+.users-feedback-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 11.6rem;
+}
+
+.feedback-title {
+  font-size: 1.8rem;
+  font-weight:  700;
+  margin-bottom: 5rem;
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.feedback-star img {
+  width: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.feedback-div {
+  border: .1rem solid var(--strock-c);
+  border-radius: 1.4rem;
+  -webkit-border-radius: 1.4rem;
+  -moz-border-radius: 1.4rem;
+  -ms-border-radius: 1.4rem;
+  -o-border-radius: 1.4rem;
+  padding: 1.5rem;
+}
+
+.feedback-div h4 {
+  font-size: 1.5rem;
+  margin-bottom: .4rem;
+}
+
+.feedback-div p {
+  font-size: 1rem;
+  color: var(--dark-3);
+  margin-bottom: 1.4rem;
+}
+
+.user-profile {
+  display: flex;
+}
+
+.user-profile img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: .6rem;
+}
+
+.user-name h5 {
+  font-size: 1rem;
+  color: var(--dark-4);
+}
+
+.user-name p {
+  font-size: .8rem;
+  color: var(--dark-5);
 }
