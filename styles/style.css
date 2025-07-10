@@ -42,7 +42,7 @@ html {
 }
 
 .primary-btn {
-  padding: 12px 36px;
+  padding: 8px 26px;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -75,14 +75,14 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 0;
+  padding: 3.5rem 0;
 }
 
 .hero-section {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 4.5rem;
 }
 
 .main-title-container {
@@ -93,4 +93,70 @@ html {
 .main-title-container h1 {
   font-size: 3.5rem;
   margin-bottom: 2rem;
+}
+
+/* start to adding CSS on main section */
+
+/* styling code for Action section */
+.action-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 11.6rem;
+}
+
+.left-action-container {
+  width: 45%;
+}
+
+.left-action-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2.3rem;
+}
+
+.left-action-container p {
+  font-size: 1.4rem;
+  color: var(--dark-2);
+  margin-bottom: 2.3rem;
+}
+
+.right-action-container img {
+  width: 25rem;
+  border-radius: 4.8rem;
+  -webkit-border-radius: 4.8rem;
+  -moz-border-radius: 4.8rem;
+  -ms-border-radius: 4.8rem;
+  -o-border-radius: 4.8rem;
+}
+
+/* styling code for user's overview section */
+.user-overview-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 11.6rem;
+}
+
+.overview-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.overview-container {
+  display: flex;
+  gap: 6rem;
+}
+
+.overview-div {
+  text-align: center;
+}
+
+.overview-div h2 {
+  font-size: 6rem;
+  color: var(--primary-c);
+}
+
+.overview-div p {
+  color: var(--dark-2);
 }
