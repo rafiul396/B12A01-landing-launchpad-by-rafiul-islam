@@ -23,10 +23,12 @@ body {
     --dark-4: #757575;
     --dark-5: #B3B3B3;
     --dark-6: #00000050;
+    --dark-7: #00000010;
     --strock-c: #F2EDED;
     --input-strock-c: #D6DDED;
     --placeholder-text-c: #00000050;
     --footer-text-c: #8987A1;
+    --hover-c: #4E47FF99;
 }
 /* fonts */
 .raleway-normal {
@@ -60,11 +62,18 @@ body {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
-  background-color: var(--primary-c);;
+  background-color: var(--primary-c);
   color: white;
   border: none;
   cursor: pointer;
   display: inline-block;
+  transition: all 1s;
+}
+
+/* apply hover effect on primary-btn */
+.primary-btn:hover {
+  background-image: linear-gradient(to right, #9403FD, #00ADFE);
+  transform: scale(1.05);
 }
 
 /* styling code for nav section */
@@ -312,7 +321,7 @@ body {
 }
 
 .form {
-  width: 40%;
+  width: 50%;
 }
 
 .form label {
@@ -337,4 +346,51 @@ body {
 
 .submit-btn {
   width: 100%;
+}
+
+/* start to adding CSS on footer section */
+.footer {
+  width: 100vw;
+  background-color: white;
+  border: .1rem solid var(--dark-7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-sec {
+  width: 40%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10.4rem 0;
+}
+
+.footer-logo {
+  font-size: 10rem;
+  margin-bottom: .8rem;
+}
+
+.footer-sec p {
+  font-size: 1.6rem;
+  color: var(--footer-text-c);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-nav ul {
+  display: flex;
+  gap: 4.8rem;
+}
+
+.footer-nav ul li {
+  list-style: none;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--footer-text-c);
 }
