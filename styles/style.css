@@ -1,3 +1,5 @@
+/* আমাদের সাধারণত ফন্ট এবং সাইজের ক্ষেত্রে পিক্সেল দেখানো হয়েছে। rem সম্পর্কে পরে বিস্তারিত আলোচনা করবে বলেছে। কিন্তু আমি ইউটিউবে একটু ঘাটাঘটি করে rem এর উপর কিছু ধারণা নিয়েছি। সেই ধারনার পরিপেক্ষিতে একটু হাল্কা পন্ডিতি করে এই assignment - এ px - এর বদলে rem ব্যবহার করেছি। যেখানে ( 1rem = 10px ) ধরে নিয়েছি। */
+
 * {
     margin: 0;
     padding: 0;
@@ -56,6 +58,9 @@ body {
 }
 
 .primary-btn {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
   padding: 12px 36px;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
@@ -74,6 +79,10 @@ body {
 .primary-btn:hover {
   background-image: linear-gradient(to right, #9403FD, #00ADFE);
   transform: scale(1.05);
+}
+
+::placeholder {
+  color: var(--dark-6);
 }
 
 /* styling code for nav section */
@@ -393,4 +402,8 @@ body {
   text-decoration: none;
   font-size: 1.6rem;
   color: var(--footer-text-c);
+}
+
+.footer-nav ul li:hover a {
+  color: var(--primary-c);
 }
